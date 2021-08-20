@@ -1,0 +1,31 @@
+name: postal_code_search
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_hooks: ^0.18.0
+  hooks_riverpod: ^1.0.0-dev.6
+  freezed_annotation: ^0.14.0
+  http: ^0.13.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: ^0.14.0
+  mockito: ^5.0.13
+  build_runner: ^2.1.1
+  json_serializable: ^4.1.0
+
+flutter:
+
+  uses-material-design: true
