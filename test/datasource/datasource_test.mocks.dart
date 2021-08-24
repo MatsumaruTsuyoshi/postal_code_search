@@ -6,7 +6,8 @@ import 'dart:async' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:postal_code_search/core/domain/entity/PostalCodeResponse.dart'
-    as _i2;
+    as _i5;
+import 'package:postal_code_search/core/failure/failure.dart' as _i2;
 import 'package:postal_code_search/core/gateway/datasource/postal_code_datasource.dart'
     as _i3;
 
@@ -18,8 +19,7 @@ import 'package:postal_code_search/core/gateway/datasource/postal_code_datasourc
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: unnecessary_parenthesis
 
-class _FakePostalCodeResponse_0 extends _i1.Fake
-    implements _i2.PostalCodeResponse {}
+class _FakeResult_0<T> extends _i1.Fake implements _i2.Result<T> {}
 
 /// A class which mocks [PostalCodeDatasource].
 ///
@@ -31,11 +31,12 @@ class MockPostalCodeDatasource extends _i1.Mock
   }
 
   @override
-  _i4.Future<_i2.PostalCodeResponse> fetchRepositories(String? postalCode) =>
+  _i4.Future<_i2.Result<_i5.PostalCodeResponse>> fetchRepositories(
+          String? postalCode) =>
       (super.noSuchMethod(Invocation.method(#fetchRepositories, [postalCode]),
-              returnValue: Future<_i2.PostalCodeResponse>.value(
-                  _FakePostalCodeResponse_0()))
-          as _i4.Future<_i2.PostalCodeResponse>);
+              returnValue: Future<_i2.Result<_i5.PostalCodeResponse>>.value(
+                  _FakeResult_0<_i5.PostalCodeResponse>()))
+          as _i4.Future<_i2.Result<_i5.PostalCodeResponse>>);
   @override
   String toString() => super.toString();
 }
